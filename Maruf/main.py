@@ -29,8 +29,8 @@ async def main() -> None:
         print("Polling ....")
         
         await dp.start_polling(bot)
-    except:
-        print("Some error occurred")
+    except Exception as e:
+        print("Some error occurred", e)
     
 
 if __name__ == "__main__":
