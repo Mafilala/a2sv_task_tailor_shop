@@ -5,6 +5,7 @@ from aiogram import Bot
 from dotenv import load_dotenv
 load_dotenv()
 TOKEN_API = os.environ.get("TOKEN_API")
+print(TOKEN_API)
 from aiogram.client.session.aiohttp import AiohttpSession
 bot = Bot(
     token=TOKEN_API,
